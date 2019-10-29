@@ -11,10 +11,11 @@ import org.treetech.exemple.entities.Student;
 public class ExempleApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext ctx=SpringApplication.run(ExempleApplication.class, args);
-		
-		StudentRepository sdao = ctx.getBean(StudentRepository.class);
-		
+		//ConfigurableApplicationContext ctx=
+				SpringApplication.run(ExempleApplication.class, args);
+
+		/*StudentRepository sdao = ctx.getBean(StudentRepository.class);
+
 		sdao.save(new Student("Khireddine Tarek", new Departement("Informatique", 300), 2));
 		sdao.save(new Student("Khireddine Djale", new Departement("Science Commercial", 600), 2));
 		sdao.save(new Student("Torchi Ahmed", new Departement("Automatique", 100), 2));
@@ -25,7 +26,7 @@ public class ExempleApplication {
 		sdao.findAll().forEach(student->{
 			System.out.println(student.getName());
 			System.out.println(student.getDepartement());
-		});
+		});*/
 	}
 
 }

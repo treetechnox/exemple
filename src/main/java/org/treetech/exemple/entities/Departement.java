@@ -1,13 +1,10 @@
 package org.treetech.exemple.entities;
 
-import java.io.Serializable;
-
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import java.io.Serializable;
 
 @Entity
 public class Departement implements Serializable{
